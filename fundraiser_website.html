@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boyles Beats Battlestar Galactica</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-image: url('assets/fundraiser_ai.png');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #3995f7;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            gap: 40px;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s ease;
+        }
+
+        .card:hover img {
+            filter: brightness(60%);
+        }
+
+        .card button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 2;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Boyles Beats Battlestar Galactica</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="assets/fundraiser_ai.png" alt="Fundraiser">
+            <button onclick="window.location.href='https://example.com/fundraiser'">Visit Fundraiser</button>
+        </div>
+        <div class="card">
+            <img src="assets/survey_google.png" alt="Survey">
+            <button onclick="window.location.href='https://forms.gle/exampleform'">Fill Out the Form</button>
+        </div>
+    </div>
+
+</body>
+</html>
